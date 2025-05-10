@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="estoque.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/logo.ico">
+
+<body>
+    <header>
+        <h1>Controle de Estoque</h1>
+    </header>
+
+    <main>
+        <div class="actions">
+            <button id="btnAdicionar">Adicionar Produto ➕</button>
+            <button id="btnPesquisar">Pesquisa Produto 🔎</button>
+            <a href="/telavendas/vendas.html"><button id="btnVendas">Ir para Vendas 🛒</button></a>
+        </div>
+
+        <table id="tabelaProdutos">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Peso (g)</th>
+                    <th>Fabricação</th>
+                    <th>Validade</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os produtos serão inseridos dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Popup para Adicionar Produto -->
+    <div id="popupAdicionar" class="popup">
+        <div class="popup-content">
+            <h3>Adicionar Produto</h3>
+            <form id="formAdicionarProduto">
+                <p>Nome do Produto: <input type="text" id="nomeProduto" required></p>
+                <p>Peso(g ou kg): <input type="number" step="0.01" id="pesoProduto" required></p>
+                <p>Fabricação: <input type="date" id="fabricacaoProduto" required></p>
+                <p>Validade: <input type="date" id="validadeProduto" required></p>
+                <p>Valor: <input type="number" step="0.01" id="valorProduto" required></p>
+                <button type="submit">Adicionar</button>
+                <button type="button" id="btnFecharAdicionar">Fechar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup para Editar Produto -->
+    <div id="popupEditar" class="popup">
+        <div class="popup-content">
+            <h3>Editar Produto</h3>
+            <form id="formEditarProduto">
+                <p class="p1">Nome do Produto: <input type="text" id="nomeProdutoEditar" required></p>
+                <p class="p1">Peso(g): <input type="number" step="0.01" id="pesoProdutoEditar" required></p>
+                <p class="p1">Fabricação: <input type="date" id="fabricacaoProdutoEditar" required></p>
+                <p class="p1">Validade: <input type="date" id="validadeProdutoEditar" required></p>
+                <p class="p1">Valor: <input type="number" step="0.01" id="valorProdutoEditar" required></p>
+                <button type="submit">Salvar</button>
+                <button type="button" id="btnFecharEditar">Fechar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup de Pesquisa -->
+    <div id="popupPesquisa" class="popup">
+        <div class="popup-content">
+            <h3>Pesquisa Produto</h3>
+            <input type="text" id="campoPesquisa" placeholder="Digite o nome do produto">
+            <button id="btnLupa">🔍</button>
+            <button id="btnFecharPopup">Fechar</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Desenvolvido por: Ponto Certo do Amendoim ltd.</h3>
+        <h3>Contato: (81) 98634-4074</h3>
+        <h4>PRODUTOS NATURAIS</h4>
+        <h3>© 2014–2025 Ponto Certo do Amendoim ltd. Todos os direitos reservados. Terms of Use Privacy Policy</h3>
+    </div>
+
+    <script type="module" src="estoque.js"></script>  
+</body>
+
+</html>

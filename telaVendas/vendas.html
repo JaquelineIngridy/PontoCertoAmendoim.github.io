@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendas.css">
+    <title>Tela de Vendas</title>
+</head>
+<body>
+    <!-- <a href="/estoque.html"><button>Voltar para estoque ⬅</button></a> -->
+    <header><h1>Tela de Vendas</h1></header>
+    <a href="/estoque.html"><button class="Voltar">Voltar para estoque ⬅</button></a>
+    
+    <label id="esquerda">Buscar Produto: <input type="text" id="campoPesquisa"></label>
+    <button id="btnPesquisar">Pesquisar 🔍</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Peso Disponível (g)</th>
+                <th>Preço por (g)</th>
+                <th>Quantidade (g)</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaVendas"></tbody>
+    </table>
+    <br>
+    <label>Valor Pago: R$ <input type="number" id="valorPago" step="0.01"></label>
+    <br>
+    <h3>Total: R$ <span id="totalVenda">0.00</span></h3>
+    <h3>Troco: R$ <span id="troco">0.00</span></h3>
+    <button id="finalizarVenda">Finalizar Venda ❌</button>
+    
+    <script type="module" src="vendas.js"></script>
+</body>
+</html>
