@@ -64,6 +64,18 @@ button {
 button:hover {
     background-color: #45a049;
 }
+button {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+
 
 h3 {
     padding: 10px;

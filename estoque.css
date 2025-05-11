@@ -75,6 +75,20 @@ button:hover {
 #btnFecharEditar:hover {
     background-color: darkred;
 }
+.botao-vendas {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.botao-vendas:hover {
+    background-color: #45a049;
+}
 
 table {
     width: 100%;
