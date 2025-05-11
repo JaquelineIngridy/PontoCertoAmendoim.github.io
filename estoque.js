@@ -227,7 +227,7 @@ async function editarProduto(event) {
     if (docSnap.exists()) {
         const data = docSnap.data();
         document.getElementById("nomeProdutoEditar").value = data.nome;
-        document.getElementById("pesoProdutoEditar").value = formatarPeso(data.peso);
+        document.getElementById("pesoProdutoEditar").value = data.peso;
         document.getElementById("fabricacaoProdutoEditar").value = data.fabricacao;
         document.getElementById("validadeProdutoEditar").value = data.validade;
         document.getElementById("valorProdutoEditar").value = data.valor;
